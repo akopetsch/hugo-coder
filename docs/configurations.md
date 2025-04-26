@@ -156,7 +156,7 @@ These are all the parameters used by `hugo-coder` theme.
 | enableTwemoji           | bool   | No       | Adds support for Twemoji                                                 | `false`                           | `true` or `false`                                 |
 | disableDefaultJsScripts | bool   | No       | If true, disables default js scripts (coder.js)                          | `false`                           | `true` or `false`                                 |
 | HeadTitle               | string | No       | When configured, it overrides the `<title>` tag with the provided string | ""                                | `"My custom title"`                               |
-
+| hideFooterDetails       | bool   | No       | If true, hides `licensed_under`, `powered_by` and `commit` in footer.    | `false`                           | `true` or `false`                                 |
 
 ### Social Icons Configuration
 
