@@ -1,5 +1,14 @@
 <footer class="footer">
   <section class="container">
+    <!-- inspired by header.html: -->
+    {{ with .Site.Menus.footer}}
+      {{ range $index, $element := sort . }}
+        {{ if $index }} · {{ end }}
+        <a href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}" target="_blank" rel="noopener">{{ .Name }}</a>
+      {{ end }}
+    {{ end }}
+    <br>
+
     ©
     {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
       {{ .Site.Params.since }} -
