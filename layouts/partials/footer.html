@@ -7,8 +7,8 @@
         <a href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ .Name }}</a>
       {{ end }}
     {{ end }}
-    <br>
-
+  </section>
+  <section class="container">
     ©
     {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
       {{ .Site.Params.since }} -
